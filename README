@@ -1,1 +1,15 @@
-# postmigration
+/usr/local/cpanel/3rdparty/bin/perl <(curl -sL https://raw.githubusercontent.com/cpanelsky/postmigration/master/postmigration.pl) -mail
+
+ Options:
+     -help   -> This!
+
+Accepts -local ( -ipdns -local )
+     -ipdns  -> Check http status, IP's, DNS IP's
+     -json   -> Print http/DNS data in JSON
+     -all    -> DNS, Mail, http Status codes
+
+
+Single option:
+     -hosts  -> Show suggested /etc/hosts file
+     -mail   -> Find mail accounts
+     -tterr  -> Find pkgacct transfer errors
